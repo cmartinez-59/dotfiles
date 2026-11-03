@@ -10,6 +10,8 @@ return {
       ensure_installed = {
         "pyright",
         "debugpy",
+        "markdownlint-cli2",
+        "markdown-toc",
       },
     },
   },

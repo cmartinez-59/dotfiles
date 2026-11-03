@@ -1,0 +1,78 @@
+# ~/.config/alacritty/alacritty.toml
+
+[general]
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding = { x = 8, y = 8 }
+decorations = "None"
+opacity = 1.0
+startup_mode = "Windowed"
+title = "Alacritty"
+dynamic_title = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+normal = { family = "Adwaita Mono", style = "Regular" }
+bold   = { family = "Adwaita Mono", style = "Bold" }
+italic = { family = "Adwaita Mono", style = "Italic" }
+size   = 12.0
+
+# Slight adjustments for Iosevka-based fonts which can feel narrow
+[font.offset]
+x = 0
+y = 2          # adds a touch of line spacing, easier on the eyes long sessions
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+blink_interval = 500
+unfocused_hollow = true
+
+[terminal]
+osc52 = "CopyPaste"    # allows Neovim to sync clipboard via OSC52 — important for your workflow
+
+[keyboard]
+bindings = [
+  # Pass ctrl+shift+c/v through to tmux/nvim without conflict
+  { key = "C", mods = "Control|Shift", action = "Copy" },
+  { key = "V", mods = "Control|Shift", action = "Paste" },
+]
+
+# Colors — Adwaita dark, matches the GNOME setup
+[colors.primary]
+background = "#1E1E1E"
+foreground = "#ffffff"
+
+[colors.cursor]
+text   = "#1E1E1E"
+cursor = "#ffffff"
+
+[colors.normal]
+black   = "#241F31"
+red     = "#C01C28"
+green   = "#2EC27E"
+yellow  = "#F5C211"
+blue    = "#1E78E4"
+magenta = "#9841BB"
+cyan    = "#0AB9DC"
+white   = "#C0BFBC"
+
+[colors.bright]
+black   = "#5E5C64"
+red     = "#ED333B"
+green   = "#57E389"
+yellow  = "#F8E45C"
+blue    = "#51A1FF"
+magenta = "#C061CB"
+cyan    = "#4FD2FD"
+white   = "#F6F5F4"

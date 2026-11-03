@@ -8,7 +8,7 @@ TERM = "xterm-256color"
 
 [window]
 padding = { x = 8, y = 8 }
-#decorations = "None"
+# decorations = "None"
 opacity = 1.0
 startup_mode = "Windowed"
 title = "Alacritty"
@@ -19,9 +19,9 @@ history = 10000
 multiplier = 3
 
 [font]
-normal = { family = "Adwaita Mono", style = "Regular" }
-bold   = { family = "Adwaita Mono", style = "Bold" }
-italic = { family = "Adwaita Mono", style = "Italic" }
+normal = { family = "AdwaitaMono Nerd Font Mono", style = "Regular" }
+bold   = { family = "AdwaitaMono Nerd Font Mono", style = "Bold" }
+italic = { family = "AdwaitaMono Nerd Font Mono", style = "Italic" }
 size   = 12.0
 
 # Slight adjustments for Iosevka-based fonts which can feel narrow
@@ -48,31 +48,31 @@ bindings = [
   { key = "V", mods = "Control|Shift", action = "Paste" },
 ]
 
-# Colors — Adwaita dark, matches the GNOME setup
+# Colors — Gruvbox Dark
 [colors.primary]
-background = "#1E1E1E"
-foreground = "#ffffff"
+background = "#282828"
+foreground = "#ebdbb2"
 
 [colors.cursor]
-text   = "#1E1E1E"
-cursor = "#ffffff"
+text   = "#282828"
+cursor = "#ebdbb2"
 
 [colors.normal]
-black   = "#241F31"
-red     = "#C01C28"
-green   = "#2EC27E"
-yellow  = "#F5C211"
-blue    = "#1E78E4"
-magenta = "#9841BB"
-cyan    = "#0AB9DC"
-white   = "#C0BFBC"
+black   = "#282828"
+red     = "#cc241d"
+green   = "#98971a"
+yellow  = "#d79921"
+blue    = "#458588"
+magenta = "#b16286"
+cyan    = "#689d6a"
+white   = "#a89984"
 
 [colors.bright]
-black   = "#5E5C64"
-red     = "#ED333B"
-green   = "#57E389"
-yellow  = "#F8E45C"
-blue    = "#51A1FF"
-magenta = "#C061CB"
-cyan    = "#4FD2FD"
-white   = "#F6F5F4"
+black   = "#928374"
+red     = "#fb4934"
+green   = "#b8bb26"
+yellow  = "#fabd2f"
+blue    = "#83a598"
+magenta = "#d3869b"
+cyan    = "#8ec07c"
+white   = "#ebdbb2"

@@ -105,13 +105,12 @@ source $ZSH/oh-my-zsh.sh
 source <(fzf --zsh)
 alias vi=nvim
 alias cd=z
-alias find=fd
+alias find=fdfind
 #vim keybinding
 set -o vi
 # opencode
 export PATH="$HOME/.local/bin:$HOME/.opencode/bin:$PATH"
 
-eval "$(zoxide init zsh)"
 # shellcheck shell=bash
 
 # =============================================================================
@@ -261,3 +260,8 @@ fi
 # To initialize zoxide, add this to your shell configuration file (usually ~/.zshrc):
 #
 # eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh)"
+export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
+
+export AWS_PROFILE=et-ai-dev
+export CLAUDE_CODE_USE_BEDROCK=true

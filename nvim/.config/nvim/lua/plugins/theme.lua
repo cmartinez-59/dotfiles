@@ -1,11 +1,16 @@
 return {
   {
-    "mofiqul/adwaita.nvim",
+    --"ellisonleao/gruvbox.nvim",
+    "Mofiqul/adwaita.nvim",
     lazy = false,
     priority = 1000,
 
+    opts = {
+      contrast = "hard",
+      terminal_colors = true,
+    },
+
     config = function()
-      vim.g.adwaita_dark = true
       vim.cmd("colorscheme adwaita")
     end,
   },
